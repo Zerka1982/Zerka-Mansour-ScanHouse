@@ -525,7 +525,7 @@ cursor: pointer;
   /* --- End Of How it works CSS --- */
   /* --- Start Of Our Team CSS --- */
   .site {
-    margin: 50px auto -50px auto;
+    margin: 30px auto -50px auto;
     padding: 5%;
     width: 90%;
     height: 100%;
@@ -1187,6 +1187,13 @@ cursor: pointer;
   margin: 0px;
   letter-spacing: 5px;
 }
+form {
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    margin: 2% auto;
+    background-color: transparent;
+    overflow: hidden;}
 #contact-form h1 {
   color: #7BCABB;
   font-size: 4rem;
