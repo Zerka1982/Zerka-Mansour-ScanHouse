@@ -97,6 +97,7 @@
                 <a class="modal-prm-btn" href="">Sign In</a>
                 <a class="modal-prm-btn" href="">Sign In</a>
               </div>
+              <div><a class="x-button" href="index">&#10006;</a></div>
             </div>
             
             </div>

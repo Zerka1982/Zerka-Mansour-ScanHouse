@@ -190,6 +190,19 @@ cursor: pointer;
   background: #fff;
   display: inline-block;
 }
+.x-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #7BCABB;
+  color: #fff;
+  width: 20px;
+  height: 30px;
+  padding: 10px 5px;
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+}
 .modal-part1 h2 {
   color: #fff;
   margin-top: 10px;
