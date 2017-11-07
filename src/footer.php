@@ -8,12 +8,17 @@
     </div>
 
     <div class="footer">
+
+        <div id="go-top">
+            <a class="smoothscroll hide-phone" title="Back to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+               </div>
+
       <div class="footerA">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">About</a></li>
-          <li><a href=""> Contact</a></li>
-          <li><a>Sign In</a></li>
+          <li><a href="index">HOME</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li id="singIn"><a href="#">Sign In</a></li>
         </ul>
       </div>
       <div class="footerB">

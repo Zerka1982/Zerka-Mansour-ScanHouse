@@ -29,7 +29,7 @@ include "src/header.php";
         <i id="circle" class="fa fa-user wow rotateInUpRight" data-wow-delay="1s" aria-hidden="true" style="font-size: 110px; color: #fff"></i>
       </div>
 
-      <div class="container wow zoomIn">
+      <div class="container">
         <video  id="sampleMovie" class="sampleMovie"  preload controls="controls" poster="images/poster.png">
           <source src="video/landing_video.mp4" type='video/mp4' />
           <source src="video/landing_video.webm" type='video/webm' />
@@ -87,7 +87,3 @@ include "src/header.php";
  <?php 
   include "src/footer.php";
  ?>
-
-
-
-

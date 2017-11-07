@@ -52,7 +52,7 @@
         
 
         <div class="nav-container">
-          <ul class="my-list wow bounceInDown">
+          <ul class="my-list">
 
           <li class="list-item"><a href="user-index"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 50px"></i></a></li>
           </ul>

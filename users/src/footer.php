@@ -9,9 +9,9 @@
 
 		<div class="footer">
 
-			<div id="go-top">
+			<!-- <div id="go-top">
             <a class="smoothscroll hide-phone" title="Back to Top" href="#"><i class="fa fa-chevron-up"></i></a>
-               </div>
+               </div> -->
       
 
       <ul class="footer-list">

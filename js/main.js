@@ -67,18 +67,18 @@
 
 
 $(window).scroll(function(){
-      		if ($(window).scrollTop() > 500) {
-      			$("#go-top").fadeIn('fast');
-      		} else {
-      			$("#go-top").fadeOut('slow');
-      		}
-      	})
-      	$('#go-top').click(function(){
+          if ($(window).scrollTop() > 500) {
+            $("#go-top").fadeIn('fast');
+          } else {
+            $("#go-top").fadeOut('slow');
+          }
+        })
+        $('#go-top').click(function(){
 
-      		$('body').animate({
-      			scrollTop: 0
-      		}, 'slow');
-     	});
+          $('body').animate({
+            scrollTop: 0
+          }, 'slow');
+      });
 
 // Disbale the right click on the page
 
@@ -103,17 +103,18 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("singIn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeBtn = document.getElementsByClassName("x-button");
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// When the user clicks the button, open the modal 
+closeBtn.onclick = function() {
     modal.style.display = "none";
 }
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -122,11 +123,5 @@ window.onclick = function(event) {
     }
 };
 
-$('#arrow').click(function(){
-      
-                $('body').animate({
-                  scrollBottom: 400
-                }, 'slow');
-              })
 
 

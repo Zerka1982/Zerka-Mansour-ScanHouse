@@ -1481,3 +1481,33 @@ background: #D9E3E1;
         and (max-device-width: 1600px){
 
         }
+
+/*  --------- Adding CSS for the arrow ------------*/
+#go-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 600;
+  display: none;
+}
+#go-top a {
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  height: 66px;
+  width: 60px;
+  line-height: 66px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 5px;
+}
+#go-top a i {
+  font-size: 50px;
+  line-height: inherit;
+}
+#go-top a:hover {
+  background: #7BCABB;
+  color: #FFFFFF;
+}
