@@ -208,11 +208,13 @@ flex: 1;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    width: 95%;
+    margin: auto;
   }
   .hosts .host, .accommo .acco {
     display: inline-block;
-    width: 250px;
-    height: 350px;
+    width: 210px;
+    height: 250px;
     background: gray;
     margin: 30px;
   }
