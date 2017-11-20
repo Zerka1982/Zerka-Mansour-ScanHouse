@@ -21,6 +21,9 @@ a {
     display: flex;
     height: 10vh;
     background: #7BCABB;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 .menu .logo-container .logo {
     opacity: 1;
@@ -63,7 +66,7 @@ a {
 a:hover {
  background: #5cab9c
 }
-.menu .menu-toggle { 
+.menu .menu-toggle {
   display: none;
 }
 @media (max-width: 768px) {
@@ -77,16 +80,20 @@ a:hover {
     position: absolute;
     right: 0;
     top: 34px;
-    z-index: 1; 
+    z-index: 1;
     display: block;
     background: #7BCABB;
     height: auto;
-    padding: 0
+    width: 65%;
+    text-align: center;
+    padding: 0;
   }
   .list-item a {
     border-bottom: 2px solid white;
-    
+    width: 70%;
+    padding-bottom: 15px;
   }
+
   .menu .menu-toggle {
     position: absolute;
     display: block;
@@ -147,7 +154,7 @@ a:hover {
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 @keyframes animatetop {
@@ -260,7 +267,7 @@ cursor: pointer;
   list-style-type: none;
 }
 .footerA ul li a{
-  color: #434c49;  
+  color: #434c49;
 }
 .footerB{
   flex: 1 1 100%;
@@ -304,7 +311,7 @@ cursor: pointer;
   width: 93.7%;
   height: 90vh;
   background: #14181E url(../images/landing.jpg) no-repeat 50% 50%;
-  background-size: cover; 
+  background-size: cover;
 }
 .decore{
   width: 20%;
@@ -322,11 +329,11 @@ cursor: pointer;
 .textJ h1{
   color: #7BCABB;
   font-size: 4rem;
-  letter-spacing: 5px;
+  line-height: 38px;
 }
 .textJ p{
   font-size: 1.6rem;
-  width: 50%;
+  width: 57%;
   color: #FFFFFF;
 }
 .textJ a{
@@ -345,7 +352,7 @@ cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  
+
   .decore{
     display: none
   }
@@ -358,13 +365,13 @@ cursor: pointer;
   }
   .textJ{
     position: relative;
-    top: 0vh;
+    top: 5vh;
     margin: 0
   }
   .textJ h1{
     font-size: 2.8rem;
-    margin: 30px 20px ;    
-    letter-spacing: 4px;
+    margin: 30px 20px ;
+    line-height: 38px;
   }
   .textJ p{
     font-size: 1.4rem;
@@ -407,7 +414,7 @@ cursor: pointer;
     font-size: 16px;
     padding: 10px;
     font-weight: bold;
-    margin: 1px auto; 
+    margin: 1px auto;
     text-align: center;
   }
   .works .inner .content {
@@ -423,8 +430,8 @@ cursor: pointer;
     display: none;
   }
   #circle {
-    width: 135px;
-    height: 135px;
+    width: 110px;
+    height: 100px;
     background: #7BCABB;
     border: 2px solid #808080;
     border-radius: 50%;
@@ -435,7 +442,7 @@ cursor: pointer;
     display: inline-block;
     border-top: 2px solid #D4CDC3;
     width: 50px;
-  }  
+  }
   #sampleMovie {
     max-width: 550px;
     height: 320px;
@@ -478,13 +485,13 @@ cursor: pointer;
       font-size: 2.5rem;
       padding: 25px;
       font-weight: bold;
-      margin:  auto; 
-      text-align: left;
-      word-spacing: 140px;
+      margin:  30px auto 0px auto;
+
+      word-spacing: 5px;
     }
     .works {
       width: 96%;
-      height: 99%;
+      height: auto;
       min-height: 550px;
       padding: 1% 2%;
       margin: 0;
@@ -505,7 +512,7 @@ cursor: pointer;
       border-radius: 50%;
       color: #7BCABB;
       background: transparent;
-    }  
+    }
     .content .primary-button-two {
       background-color: #7BCABB;
       color: #fff;
@@ -526,7 +533,7 @@ cursor: pointer;
   /* --- Start Of Our Team CSS --- */
   .site {
     margin: 30px auto -50px auto;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
     width: 90%;
     height: 100%;
     min-height: 500px;
@@ -560,7 +567,6 @@ cursor: pointer;
     display: table;
     background-size: cover;
     position: relative;
-    opacity: 0.7;
 }
 
 .item {
@@ -576,7 +582,7 @@ cursor: pointer;
     position: absolute;
     right: 20px;
     bottom: 20px;
-    color: #000;
+    color: #fff;
     font-size: 18px;
 }
 
@@ -584,7 +590,7 @@ cursor: pointer;
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: #000;
+    color: #fff;
 }
 
 .three {
@@ -595,7 +601,6 @@ cursor: pointer;
     display: table;
     background-size: cover;
     position: relative;
-    opacity: 0.6;
 }
 
 
@@ -683,11 +688,11 @@ cursor: pointer;
     word-spacing: 5px;
   }
   blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/ 
+    content: "\201C"; /*Unicode for Left Double Quote*/
     /*Font*/
     font-size: 60px;
     font-weight: bold;
-    color: #7BCABB; 
+    color: #7BCABB;
     /*Positioning*/
     position: absolute;
     left: 20px;
@@ -719,7 +724,7 @@ cursor: pointer;
   }
   .decoretwo {
     position: relative;
-    top: 60px;   
+    top: 60px;
     margin-bottom: 0px;
     width: 250px;
     height: 30px;
@@ -800,8 +805,8 @@ cursor: pointer;
   .question-container {
     width: 90%;
     text-align: center;
-    margin: 20px auto;
-    padding: 5% 0%;
+    margin: 0 auto;
+    padding: 0%;
   }
   .question-container h1 {
     color: #7BCABB;
@@ -836,7 +841,7 @@ cursor: pointer;
   width: 93.7%;
   height: 90vh;
   background: #14181E url(../images/about.jpeg) no-repeat 50% 50%;
-  background-size: cover; 
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .jumbotronAbout{
@@ -898,7 +903,7 @@ cursor: pointer;
     max-width: 73.125rem;
     width: 70%;
   }
- 
+
   i {
     margin: 20px auto;
   }
@@ -911,7 +916,7 @@ cursor: pointer;
     font-size: 18px;
     margin: 10px 0;
   }
-  
+
   .check{
     width: 100%;
     height: auto;
@@ -919,7 +924,7 @@ cursor: pointer;
     margin-top: 4rem;
     margin-left:  auto;
     margin-right: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
   .check h1{
     font-size: 2.5rem;
@@ -930,7 +935,7 @@ cursor: pointer;
     letter-spacing: 5px;
     font-family: "Questrial", sans-serif;
   }
-  
+
   .option {
     padding-left: 3.5%;
     padding-right: 3.5%;
@@ -945,9 +950,9 @@ cursor: pointer;
     color: white;
   }
   .optionI{
-    margin: auto; 
-    background: white; 
-    width: 150px; 
+    margin: auto;
+    background: white;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     position: relative;
@@ -969,13 +974,13 @@ cursor: pointer;
       height: auto;
       color: white;
       display: block;
-    }  
+    }
   }
   @media only screen and (max-width: 500px) {
     .option {
       float: left;
       color: white;
-    } 
+    }
     .check p {
       text-align: left;
       font-size: 16px;
@@ -1018,14 +1023,14 @@ cursor: pointer;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
-    margin: 100px 0px;
+    margin: 40px 0px 50px 0px;
   }
   .rPic{
     text-align: right;
     flex: 1 1 100%;
     box-sizing: border-box;
     max-width: 40%;
-    display: block;   
+    display: block;
   }
   .rLine{
     width: 50%;
@@ -1036,7 +1041,7 @@ cursor: pointer;
   .rText{
     flex: 1 1 1e-09px;
     box-sizing: border-box;
-    display: block; 
+    display: block;
   }
   .rText h1{
     font-size: 2.5rem;
@@ -1077,7 +1082,7 @@ cursor: pointer;
       flex: 1 1 100%;
       box-sizing: border-box;
       display: block;
-      max-height: 40%;   
+      max-height: 40%;
     }
     .rPic img{
       width: 80%
@@ -1160,12 +1165,12 @@ cursor: pointer;
       min-height: 550px;
       margin-top: auto;
       margin-right: 20px;
-     
+
 }
 .bg-contact .content{
     font-weight: 100;
     color: white;
-    padding: 0% 5%;
+    padding: 2% 5% 5% 5%;
     width: 90%;
     height: 95%;
     min-height: 520px;
@@ -1222,7 +1227,7 @@ background-color: #7BCABB;
    padding: 8px 50px;
    border-radius: 20px;
    font-size: 2rem;
-   border-color: transparent; 
+   border-color: transparent;
    margin: 30px auto;
    width: 50%;
    display: flex;
@@ -1237,7 +1242,7 @@ background-color: #7BCABB;
   padding: 10px 20px;
 }
 .leftcontact {
-  width:49.5%; 
+  width:49.5%;
   float:left;
   box-sizing: border-box;
   padding: 0px 15px 0px 0px;
@@ -1249,7 +1254,7 @@ background-color: #7BCABB;
   padding: 0px 0px 0px 15px;
 }
 .map {
-  margin: 40px auto;
+  margin: 100px auto;
 }
 .form-group input[type="text"] {
     border-radius: 0px 0px 0px 0px;
@@ -1417,13 +1422,13 @@ padding: 2% 2%;
 background: #D9E3E1;
 }
 
-@media only screen and (max-width: 500px) {  
+@media only screen and (max-width: 500px) {
   .bg-contact .content h1 {
     color: #7BCABB;
     font-size: 2.5rem;
     letter-spacing: 5px;
     margin: 10px auto;
-    /*margin-top: 1rem;*/
+    margin-top: 2rem;
   }
   #contact-form .primary-contact-button {
     background-color: #7BCABB;
@@ -1435,8 +1440,7 @@ background: #D9E3E1;
      width: 100%;
      position: absolute;
      left: 0;
-     right: 0;
-     bottom: 0;
+    
   }
 }
 /* ---------------- End Of Contact CSS ---------------- */
@@ -1445,39 +1449,39 @@ background: #D9E3E1;
 
 /* ----------- Phone Screen ----------- */
         /* Portrait */
-        @media only screen 
-        and (min-device-width: 320px) 
+        @media only screen
+        and (min-device-width: 320px)
         and (max-device-width: 640px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {
-           
-    
+
+
         }
        /* Landscape */
-        @media only screen 
-        and (min-device-width: 320px) 
+        @media only screen
+        and (min-device-width: 320px)
         and (max-device-width: 750px)
         and (orientation: landscape) {
-          
+
         }
 /* ----------- Tablet ----------- */
          /* Portrait */
-         @media only screen 
-         and (min-device-width: 690px) 
-         and (max-device-width: 1199px) 
+         @media only screen
+         and (min-device-width: 690px)
+         and (max-device-width: 1199px)
          and (orientation: portrait) {
-           
+
         }
-       /* Landscape */ 
-        @media only screen 
-        and (min-device-width: 690px) 
-        and (max-device-width: 1199px) 
+       /* Landscape */
+        @media only screen
+        and (min-device-width: 690px)
+        and (max-device-width: 1199px)
         and (orientation: landscape) {
-           
+
         }
 /* ----------- Laptop ----------- */
-        @media screen 
-        and (min-device-width: 1200px) 
+        @media screen
+        and (min-device-width: 1200px)
         and (max-device-width: 1600px){
 
         }
