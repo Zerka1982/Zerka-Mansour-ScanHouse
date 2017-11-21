@@ -48,7 +48,7 @@
 
         <div class="logo-container">
          <img src="images/logo-test.png" width="157" height="0" alt="Globuzzer" class="logo">
-          </div>
+        </div>
         
 
         <div class="nav-container">
@@ -57,11 +57,14 @@
           <li class="list-item"><a href="index">Home</a></li>
           <li class="list-item"><a href="about">About</a></li>
           <li class="list-item"><a href="contact">Contact</a></li>
-            <li id="singIn" class="list-item"><a href="#">Sign in</a></li>
+          <li id="singIn" class="list-item"><a href="#">Sign in</a></li>
+          <li id="singInM" class="list-item"><a href="#">Sign in</a></li>
+          <li id="singUpM" class="list-item"><a href="#">Sign up</a></li>
+
           </ul>
-          </div>
-          <div class="menu-toggle">
-           <a href="#"><i class="fa fa-bars"  aria-hidden="true"></i></a>
+        </div>
+        <div class="menu-toggle">
+           <a href="#" style="padding:0"><i class="fa fa-bars fa-2x"  aria-hidden="true"></i></a>
         </div>
         
 
@@ -70,17 +73,18 @@
        <!-- Modal content -->
           <div class="modal-content">
             
-            <div class="modal-part1">
+            <div id="part1" class="modal-part1">
               <h2>Have you registred?</h2>
-              <div>
+              <div class="signIn">
                 <input type="email" name="emailid" placeholder="E-mail">
                 <input type="password" name="passwordid" placeholder="Password">
                 <a href="">Forgot password?</a><br>
-                <a class="primary-button" href="#">Sign in</a>
+                <a class="primary-button" href="#">Sign in</a><br>
+                <a id="closeM" class="primary-button" href="#">Cancel</a>
               </div>
             </div>
 
-            <div class="modal-part2">
+            <div id="part2" class="modal-part2">
               <h2>Not a member?</h2>
               <div>
                 <div class="signIn-part">
@@ -93,9 +97,9 @@
                 </div>
               </div>
               <div class="buttons-side">
-                <a class="modal-prm-btn" href="">Sign In</a>
-                <a class="modal-prm-btn" href="">Sign In</a>
-                <a class="modal-prm-btn" id="#signUpButton" href="">Sign In</a>
+                <a class="modal-prm-btn " href="">Sign In</a>
+                <a class="modal-prm-btn socialF" href="">Log in with <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="modal-prm-btn socialG" id="#signUpButton" href="">Log in with <i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
               </div>
               <div><a class="x-button" href="index">&#10006;</a></div>
             </div>
@@ -103,6 +107,7 @@
             </div>
              
       </div>
+      
          
    </div> <!-- /header --> 
     
